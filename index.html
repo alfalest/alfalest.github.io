@@ -139,12 +139,6 @@
 
 <script>
   function triggerPreloader() {
-    var preloader = document.getElementById('preloader');
-    var glitchText = document.getElementById('preloaderGlitch');
-
-    preloader.style.display = 'flex';
-    glitchText.innerHTML = '<div>' + glitchText.getAttribute('data-text') + '</div>';
-
     setTimeout(function () {
       preloader.style.display = 'none';
       // Redirect to the target page
