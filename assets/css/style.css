@@ -203,3 +203,30 @@ img {
 #item-3:checked~.player #test {
   transform: translateY(-80px);
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #0e1111; /* You can adjust the background color for mobile */
+  }
+
+  #desktopContent {
+    display: none; /* Hide desktop content on mobile */
+  }
+
+  #mobileContent {
+    display: block; /* Show mobile content on mobile */
+    text-align: center;
+    padding: 20px;
+    color: #7CFC00; /* Adjust text color for mobile */
+  }
+
+  .glitch-text,
+  .glitch-button {
+    font-size: 2em; /* Adjust font size for mobile */
+  }
+
+  .glitch-button {
+    margin-top: 10px; /* Adjust margin for mobile */
+    text-decoration: none; /* Remove underline on mobile buttons */
+  }
+}
