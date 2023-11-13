@@ -151,34 +151,14 @@
     }
   </style>
 </head>
-<?php
-// Mendeteksi User-Agent
-$userAgent = $_SERVER['HTTP_USER_AGENT'];
-// Menentukan apakah pengguna menggunakan perangkat seluler (misalnya, smartphone atau tablet)
-$isMobile = (strpos($userAgent, 'Mobile') !== false || strpos($userAgent, 'Tablet') !== false);
-?>
 
 <body>
-  <?php if ($isMobile) : ?>
-    <div id="mobileContent">
-      <div class="glitch-text" data-text="YOUR SYSTEM WAS DAMAGED BY { ALFALEST }">
-        YOUR SYSTEM WAS DAMAGED BY { ALFALEST }
-      </div>
-      <a href="pages.html" class="glitch-button btn" data-text="CLICK HERE TO REPAIR YOUR SYSTEM">
-        CLICK HERE TO REPAIR YOUR SYSTEM
-      </a>
-    </div>
-  <?php else : ?>
-    <div id="desktopContent">
-      <div class="glitch-text" data-text="YOUR SYSTEM WAS DAMAGED BY { ALFALEST }">
-        YOUR SYSTEM WAS DAMAGED BY { ALFALEST }
-      </div>
-      <a href="pages.html" class="glitch-button btn" data-text="CLICK HERE TO REPAIR YOUR SYSTEM">
-        CLICK HERE TO REPAIR YOUR SYSTEM
-      </a>
-    </div>
-
-  <?php endif; ?>
+  <div class="glitch-text" data-text="YOUR SYSTEM WAS DAMAGED BY { ALFALEST }">
+    YOUR SYSTEM WAS DAMAGED BY { ALFALEST }
+  </div>
+  <a href="pages.html" class="glitch-button btn" data-text="CLICK HERE TO REPAIR YOUR SYSTEM">
+    CLICK HERE TO REPAIR YOUR SYSTEM
+  </a>
 
   <!-- Scripts -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
