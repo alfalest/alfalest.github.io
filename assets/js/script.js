@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("random-image").src = imagePath;
 }
 
-
   $('input').on('change', function () {
     $('body').toggleClass('blue');
   });
