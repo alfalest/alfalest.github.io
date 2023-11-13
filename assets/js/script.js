@@ -31,9 +31,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Mengganti sumber gambar pada elemen dengan id "random-image"
     document.getElementById("random-image").src = imagePath;
-}
-
-  $('input').on('change', function () {
-    $('body').toggleClass('blue');
-  });
+  }
   
