@@ -3,13 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".swiper-container", {
       direction: "horizontal",
       slidesPerView: 1,
-      spaceBetween: 30,
       mousewheel: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
-      autoHeight: true,
+      // autoHeight: true,
     });
 
     document.body.addEventListener("wheel", function (e) {

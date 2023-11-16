@@ -26,7 +26,7 @@ html {
 
 .add-padding {
   padding: 230px;
-  margin-top: 80px;
+  margin-top: 10px;
 }
 
 /* Tambahkan gaya tambahan sesuai kebutuhan Anda */
@@ -528,8 +528,8 @@ img {
       .typed-text-dua {
         width: 100%;
         overflow: hidden;
-        -webkit-animation: typing 20s;
-        animation: animasi-ketik 20s;
+        -webkit-animation: typing 5s;
+        animation: animasi-ketik 5s;
       }
       
       @keyframes animasi-ketik {
@@ -542,6 +542,11 @@ img {
         from {
           width: 0;
         }
+      }
+      .profile-img img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
       }
 
 /* MEDIA QUERY FOR ANDROID */
@@ -573,6 +578,7 @@ img {
     flex-direction: column;
     align-items: center;
   }
+
   .add-padding img {
     width: 100%;
     height: 100%;
@@ -591,5 +597,12 @@ img {
   .info-dua:after {
     display: none;
   }
+  .typed-text-dua{
+    font-size: 12px;
+  }
+  .profile-img img {
+      max-width: 100%; /* Ubah ukuran maksimum ke 100% untuk tampilan smartphone */
+  }
+  
 }
 
