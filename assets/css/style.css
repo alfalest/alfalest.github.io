@@ -214,56 +214,6 @@ img {
         overflow: default;
       }
 
-      .info-dua {
-        text-align: center;
-        width: 1000px;
-        height: 60px;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 20px;
-        right: 0;
-        -webkit-animation: noise-3 1s linear infinite;
-        animation: noise-3 1s linear infinite;
-      }
-    
-      .info-dua:before {
-        content: "WHAT YOU LOOKING FOR?!";
-        font-family: OCR-A;
-        font-size: 80px;
-        text-align: center;
-        width: 1000px;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 40px;
-        right: 100px;
-        opacity: 0;
-        color: #7CFC00;
-        -webkit-animation: noise-2 1s linear infinite;
-        animation: noise-2 1s linear infinite;
-      }
-    
-      .info-dua:after {
-        content: "WHAT YOU LOOKING FOR?";
-        font-family: OCR-A;
-        font-size: 80px;
-        text-align: center;
-        width: 1000px;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 40px;
-        right: 0;
-        opacity: 0;
-        color: #f00;
-        -webkit-animation: noise-1 0.8s linear infinite;
-        animation: noise-1 0.8s linear infinite;
-      }
-
       .info {
         -webkit-animation: noise-3 1s linear infinite;
         animation: noise-3 1s linear infinite;
@@ -565,6 +515,32 @@ img {
       @media only screen and (min-height: 500px) {
         .viewFull {
           display: none;
+        }
+      }
+
+      .typed-text {
+        width: 100%;
+        overflow: hidden;
+        -webkit-animation: typing 3s;
+        animation: animasi-ketik 3s;
+      }
+
+      .typed-text-dua {
+        width: 100%;
+        overflow: hidden;
+        -webkit-animation: typing 20s;
+        animation: animasi-ketik 20s;
+      }
+      
+      @keyframes animasi-ketik {
+        from {
+          width: 0;
+        }
+      }
+      
+      @-webkit-keyframes animasi-ketik {
+        from {
+          width: 0;
         }
       }
 
