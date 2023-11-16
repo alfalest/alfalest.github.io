@@ -603,6 +603,9 @@ img {
   .profile-img img {
       max-width: 100%; /* Ubah ukuran maksimum ke 100% untuk tampilan smartphone */
   }
+  .add-margin-top {
+    margin-top: -150px;
+  }
   
 }
 

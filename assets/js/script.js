@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
       slidesPerView: 1,
       mousewheel: true,
       pagination: {
-        el: ".swiper-pagination",
+        // el: ".swiper-pagination",
         clickable: true,
       },
       // autoHeight: true,
