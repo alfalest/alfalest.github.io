@@ -527,8 +527,8 @@ img {
       .typed-text-dua {
         width: 100%;
         overflow: hidden;
-        -webkit-animation: typing 5s;
-        animation: animasi-ketik 5s;
+        -webkit-animation: typing 15s;
+        animation: animasi-ketik 15s;
       }
       
       @keyframes animasi-ketik {
