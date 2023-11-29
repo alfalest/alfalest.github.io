@@ -21,6 +21,8 @@ html {
   align-items: center;
   box-sizing: border-box;
   padding: 20px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .add-padding {
@@ -120,6 +122,8 @@ img {
   border-radius: 8px;
   min-width: 320px;
   padding: 16px 10px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .upper-part {
@@ -130,6 +134,8 @@ img {
   height: 36px;
   overflow: hidden;
   margin-left: -30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .play-icon {
@@ -176,7 +182,7 @@ img {
 .progress {
   display: block;
   position: relative;
-  width: 60%;
+  width: 50%;
   height: 100%;
   background-color: #fff;
   border-radius: 6px;
@@ -188,6 +194,8 @@ img {
   top: 0;
   left: 30px;
   transition: transform .4s ease-in;
+  display: flex;
+  flex-direction: column;
 }
 
 #item-2:checked~.player #test {
@@ -553,9 +561,12 @@ img {
 @media only screen and (max-width: 768px) {
   .cards {
     position: relative;
-    width: 100%;
+    width: 75%;
     height: 100%;
     margin-bottom: 20px;
+    display: flex;
+    max-width: 100%;
+    scrollbar-width: thin;
   }
   .card {
     position: absolute;
@@ -566,17 +577,22 @@ img {
     margin: auto;
     transition: transform .4s ease;
     cursor: pointer;
+    flex: 0 0 auto;
   }
 
   .swiper-slide .container-carousel-img {
     width: 250px;
     height: 100%;
-    max-width: 500px;
+    max-width: 100%;
     max-height: 500px;
     display: flex;
     transform-style: preserve-3d;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
 
