@@ -247,26 +247,101 @@
         <div class="container">
           <div class="row add-margin-top">
 
-              <div class="profile-img col-md-6 order-md-2">
-                <img src="assets/img/pic.jpg" class="img-fluid border-0"
-                  style="width: 100%; max-width: 450px; height: auto;" alt="...">
+            <div class="profile-img col-md-6 order-md-2">
+              <img src="assets/img/pic.jpg" class="img-fluid border-0"
+                style="width: 100%; max-width: 450px; height: auto;" alt="...">
+            </div>
+            <div class="col-md-6 order-md-1">
+              <div class="py-0 my-0 text-start typed-text-dua">
+                Meet Adib, a mysterious programmer. His full name is Muhammad Adib Alfaini Afifi. Born in Tangerang on
+                October 1<sup>st</sup>, 2000. Adib is a full-stack programmer with two years of experience in web
+                application development using CodeIgniter 4. Hailing from the <b>CEP - CCIT Faculty of Engineering at
+                  the University of Indonesia</b>. His expertise extends across a spectrum of programming languages,
+                showcasing proficiency
+                in <b>JavaScript, jQuery, MySQL, Swift, Java, HTML, CSS, PHP, and the implementation of webhooks</b>.
               </div>
-              <div class="col-md-6 order-md-1">
-                <div class="py-0 my-0 text-start typed-text-dua">
-                  Meet Adib, a mysterious programmer. His full name is Muhammad Adib Alfaini Afifi. Born in Tangerang on
-                  October 1<sup>st</sup>, 2000. Adib is a full-stack programmer with two years of experience in web
-                  application development using CodeIgniter 4. Hailing from the <b>CEP - CCIT Faculty of Engineering at
-                    the University of Indonesia</b>. His expertise extends across a spectrum of programming languages, showcasing proficiency
-                  in <b>JavaScript, jQuery, MySQL, Swift, Java, HTML, CSS, PHP, and the implementation of webhooks</b>.
-                </div>
-              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Swiper Slide 5 -->
       <div class="swiper-slide">
-        <h1>CONTACT PAGE TEST (INCOMPLETE)</h1>
+        <section class="retro-contact">
+          <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+              <h2 class="section-title">Contact Me</h2>
+              <p class="section-subtitle">If you want to save your system!</p>
+              <div class="contact-info info error">
+                <div class="phone">
+                  <p id="phone-text"></p>
+                </div>
+                  <p id="email-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <script>
+          const phoneText = "+62 851-6285-1060";
+          const emailText = "alfainiaff@gmail.com";
+
+          function typeWriter(text, elementId) {
+            let i = 0;
+            const speed = 500; // typing speed in milliseconds
+
+            function type() {
+              if (i < text.length) {
+                document.getElementById(elementId).innerHTML += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+              }
+            }
+
+            type();
+          }
+
+          // Call the typeWriter function for each text element
+          typeWriter(phoneText, "phone-text");
+          typeWriter(emailText, "email-text");
+        </script>
+
+        <style>
+          /* Add animation styles here */
+          .retro-contact .contact-info p {
+            display: inline-block;
+            overflow: hidden;
+            border-right: 0.15em solid #0e1111;
+            white-space: nowrap;
+            margin: 0;
+            letter-spacing: 0.15em;
+            animation: typing 1.5s steps(40, end),
+              blink-caret 0.75s step-end infinite alternate;
+          }
+
+          @keyframes typing {
+            from {
+              width: 0;
+            }
+
+            to {
+              width: 100%;
+            }
+          }
+
+          @keyframes blink-caret {
+
+            from,
+            to {
+              border-color: transparent;
+            }
+
+            50% {
+              border-color: #0e1111;
+            }
+          }
+        </style>
       </div>
     </div>
   </div>
