@@ -36,7 +36,7 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand info error" href="index.html" style="color: #7CFC00;">{ AlfaLest.dev }</a>
+      <a class="navbar-brand info error" href="index.html" style="color: #7CFC00;">{ Adib Alfaini }</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: #7CFC00;">
         <span>{ + }</span>
@@ -68,15 +68,14 @@
   <!-- SWIPER CONTAINER -->
   <div class="swiper-container">
     <div class="swiper-wrapper">
-
       <!-- Swiper Slide 1 -->
       <div id="slide-1" class="swiper-slide">
         <div class="row">
           <div class="col-12">
 
             <div class="text-start typed-text">
-              <p class="py-0 my-0">/Portofolio by Adib/</p>
-              <p class="py-0 my-0">Full Stack Developer</p>
+              <p class="py-0 my-0">{ Portofolio by Adib }</p>
+              <p class="py-0 my-0">Web Developer</p>
             </div>
 
             <div class="pt-5 my-5 text-center typed-text">
@@ -265,18 +264,17 @@
         <div class="container">
           <div class="row add-margin-top">
 
-            <div class="profile-img col-md-6 order-md-2">
-              <img src="assets/img/pic.jpg" class="img-fluid border-0"
-                style="width: 100%; max-width: 450px; height: auto;" alt="...">
+            <div class="profile-img col-md-6 order-md-2 mb-2"">
+              <img src="assets/img/pic2.jpg" class="img-fluid border-0 rounded-circle
+                style="width: 100%; max-width: 300px; height: auto;" alt="...">
             </div>
             <div class="col-md-6 order-md-1">
               <div class="py-0 my-0 text-start typed-text-dua">
-                Meet Adib, a mysterious programmer. His full name is Muhammad Adib Alfaini Afifi. Born in Tangerang on
-                October 1<sup>st</sup>, 2000. Adib is a full-stack programmer with two years of experience in web
-                application development using CodeIgniter 4. Hailing from the <b>CEP - CCIT Faculty of Engineering at
+                Meet Adib, a Web Developer. His full name is Muhammad Adib Alfaini Afifi. Born in Tangerang on
+                October 1<sup>st</sup>, 2000. Adib is a Web Developer with two years of experience in web
+                application development using CodeIgniter 4 and Laravel. Hailing from the <b>CEP - CCIT Faculty of Engineering at
                   the University of Indonesia</b>. His expertise extends across a spectrum of programming languages,
-                showcasing proficiency
-                in <b>JavaScript, jQuery, MySQL, Swift, Java, HTML, CSS, PHP, and the implementation of webhooks</b>.
+                showcasing proficiency in <b>JavaScript, jQuery, MySQL, HTML, CSS, PHP, and the implementation of API</b>.
               </div>
             </div>
           </div>
@@ -287,28 +285,32 @@
       <div id="slide-5" class="swiper-slide">
         <section class="retro-contact" style="margin-top: -100px;">
           <div class="row justify-content-center">
-            <div class="col-md-6 text-center">
+            <div class="col-md-12 text-center">
               <h2 class="section-title">Contact Me</h2>
               <p class="section-subtitle">If you want to save your system!</p>
               <div class="contact-info info error">
                 <div class="phone">
-                  <p id="phone-text"></p>
+                  <p><a href="https://wa.me/qr/G3I23ETWGSVJK1" class="link-offset-2 link-underline link-underline-opacity-0" id="phone-text" target="__blank"></a></p>
                 </div>
                 <div class="email">
-                  <p id="email-text"></p>
+                  <p><a href="mailto:alfainiaff@gmail.com" class="link-offset-2 link-underline link-underline-opacity-0" id="email-text" target="__blank"></a></p>
                 </div>
+                <!-- <div class="github">
+                  <p><a href="https://github.com/alfalest" class="link-offset-2 link-underline link-underline-opacity-0" id="github-text"></a></p>
+                </div> -->
               </div>
             </div>
           </div>
         </section>
 
         <script>
-          const phoneText = "+62 851-6285-1060";
-          const emailText = "alfainiaff@gmail.com";
+          const phoneText = "WhatsApp";
+          const emailText = "Email";
+          // const githubText = "GitHub";
 
           function typeWriter(text, elementId) {
             let i = 0;
-            const speed = 500; // typing speed in milliseconds
+            const speed = 600; // typing speed in milliseconds
 
             function type() {
               if (i < text.length) {
@@ -324,6 +326,7 @@
           // Call the typeWriter function for each text element
           typeWriter(phoneText, "phone-text");
           typeWriter(emailText, "email-text");
+          // typeWriter(githubText, "github-text");
         </script>
 
         <style>
@@ -371,10 +374,21 @@
       <div>
         <a href="https://github.com/alfalest" target="__blank"
           class="link-offset-2 link-underline link-underline-opacity-0" style="color: #7CFC00;">Github</a>
-        <a href="https://www.linkedin.com/in/fainewayne/" target="__blank"
+        <a href="https://www.linkedin.com/in/adibalfaini/" target="__blank"
           class="link-offset-2 link-underline link-underline-opacity-0 mx-5" style="color: #7CFC00;">LinkedIn</a>
       </div>
-      <p class="py-0 my-0 ms-auto">©2023</p>
+      <p id="year" class="py-0 my-0 ms-auto"></p>
+
+      <script>
+          var yearElement = document.getElementById('year');
+          var currentYear = new Date().getFullYear();
+          yearElement.textContent = '© ' + currentYear;
+          function updateYear() {
+              var newYear = new Date().getFullYear();
+              yearElement.textContent = '© ' + newYear;
+          }
+          setInterval(updateYear, 1000);
+      </script>
     </div>
   </footer>
 
