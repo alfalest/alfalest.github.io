@@ -67,40 +67,11 @@
 
   <!-- DARK OVERLAY -->
   <div id="dark-overlay" class="dark-overlay"></div>
-
   <!-- ALERT -->
   <div id="custom-alert" class="custom-alert">
     <span id="alert-message"></span>
   </div>
-
-  <script>
-    function showAlert(message) {
-      var overlayElement = document.getElementById('dark-overlay');
-      var alertElement = document.getElementById('custom-alert');
-      var alertMessageElement = document.getElementById('alert-message');
-      alertMessageElement.textContent = message;
-
-      overlayElement.style.display = 'block';
-      alertElement.style.display = 'block';
-
-      setTimeout(function () {
-        hideAlert();
-      }, 1000);
-    }
-
-    function hideAlert() {
-      var overlayElement = document.getElementById('dark-overlay');
-      var alertElement = document.getElementById('custom-alert');
-  
-      overlayElement.style.display = 'none';
-      alertElement.style.display = 'none';
-    }
-  
-    showAlert('SWIPE >>>');
-  </script>
-  
-  
-
+    
   <!-- SWIPER CONTAINER -->
   <div class="swiper-container">    
     <div class="swiper-wrapper">

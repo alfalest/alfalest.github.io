@@ -31,4 +31,29 @@ document.addEventListener("DOMContentLoaded", function () {
     // Mengganti sumber gambar pada elemen dengan id "random-image"
     document.getElementById("random-image").src = imagePath;
   }
+
+  // ALERT FOR SWIPE
+  function showAlert(message) {
+    var overlayElement = document.getElementById('dark-overlay');
+    var alertElement = document.getElementById('custom-alert');
+    var alertMessageElement = document.getElementById('alert-message');
+    alertMessageElement.textContent = message;
+
+    overlayElement.style.display = 'block';
+    alertElement.style.display = 'block';
+
+    setTimeout(function () {
+      hideAlert();
+    }, 1000);
+  }
+
+  function hideAlert() {
+    var overlayElement = document.getElementById('dark-overlay');
+    var alertElement = document.getElementById('custom-alert');
+
+    overlayElement.style.display = 'none';
+    alertElement.style.display = 'none';
+  }
+
+  showAlert('SWIPE >>>');
   
