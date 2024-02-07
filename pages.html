@@ -5,24 +5,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="assets/logo.png" type="image/png">
-  <title>AlfaLest Development</title>
-  <meta name="title" content="AlfaLest Development" />
+  <title>Adib Alfaini Afifi</title>
+  <meta name="title" content="Adib Alfaini Afifi" />
   <meta name="description"
-    content="Company profile website for Adib future dreams (software house), AlfaLest Development" />
+    content="Portofolio website for Adib Alfaini Afifi" />
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alfalest.github.io/" />
-  <meta property="og:title" content="AlfaLest Development" />
+  <meta property="og:title" content="Adib Alfaini Afifi" />
   <meta property="og:description"
-    content="Company profile website for Adib future dreams (software house), AlfaLest Development" />
+    content="Portofolio website for Adib Alfaini Afifi" />
   <meta property="og:image" content="https://alfalest.github.io/assets/logo.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://alfalest.github.io/" />
-  <meta property="twitter:title" content="AlfaLest Development" />
+  <meta property="twitter:title" content="Adib Alfaini Afifi" />
   <meta property="twitter:description"
-    content="Company profile website for Adib future dreams (software house), AlfaLest Development" />
+    content="Portofolio website for Adib Alfaini Afifi" />
   <meta property="twitter:image" content="https://alfalest.github.io/assets/logo.png" />
 
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -65,8 +65,44 @@
   </nav>
   <span class="info-dua error-dua"></span>
 
+  <!-- DARK OVERLAY -->
+  <div id="dark-overlay" class="dark-overlay"></div>
+
+  <!-- ALERT -->
+  <div id="custom-alert" class="custom-alert">
+    <span id="alert-message"></span>
+  </div>
+
+  <script>
+    function showAlert(message) {
+      var overlayElement = document.getElementById('dark-overlay');
+      var alertElement = document.getElementById('custom-alert');
+      var alertMessageElement = document.getElementById('alert-message');
+      alertMessageElement.textContent = message;
+
+      overlayElement.style.display = 'block';
+      alertElement.style.display = 'block';
+
+      setTimeout(function () {
+        hideAlert();
+      }, 1000);
+    }
+
+    function hideAlert() {
+      var overlayElement = document.getElementById('dark-overlay');
+      var alertElement = document.getElementById('custom-alert');
+  
+      overlayElement.style.display = 'none';
+      alertElement.style.display = 'none';
+    }
+  
+    showAlert('SWIPE FOR INFORMATION >>>');
+  </script>
+  
+  
+
   <!-- SWIPER CONTAINER -->
-  <div class="swiper-container">
+  <div class="swiper-container">    
     <div class="swiper-wrapper">
       <!-- Swiper Slide 1 -->
       <div id="slide-1" class="swiper-slide">

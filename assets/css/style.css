@@ -5,12 +5,36 @@ html {
   height: 100%;
   font-family: 'Courier New', monospace;
   overflow: hidden;
-  background-color: #0e1111;
+  background-color: #000;
   color : #7CFC00;
 }
 
 a {
   color: #7CFC00;
+}
+
+.custom-alert {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  color: #7CFC00;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dark-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 999;
 }
 
 .swiper-container {
